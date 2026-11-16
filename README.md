@@ -1,4 +1,4 @@
-# NOOLAM · Kanchipuram Silk — Saree Showcase Website
+# STORESAREE · Kanchipuram Silk — Saree Showcase Website
 
 A luxury Kanchipuram silk saree storefront concept — deep maroon, temple gold and ivory — with nine interactive sections. Built as a pure static site (HTML + CSS + vanilla JS, no frameworks, no build step).
 
@@ -36,6 +36,6 @@ assets/img/       # royalty-free Unsplash photography
 
 ## Credits
 
-- Design concept inspired by the NOOLAM showcase reel (genz.webdeveloper)
+- Design concept inspired by the STORESAREE showcase reel (genz.webdeveloper)
 - Photography: Unsplash (free license)
 - Garments on the rack: hand-drawn SVG, generated in `js/main.js`

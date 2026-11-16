@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════
-   NOOLAM — interactions
+   STORESAREE — interactions
    ═══════════════════════════════════════════════ */
 "use strict";
 const $ = (s, el = document) => el.querySelector(s);
@@ -133,33 +133,33 @@ function garmentSVG(item, uid) {
    ═══════════════════════════════════════════════ */
 /* ── rack items (25 unique) ── */
 const RACK = [
-  { id: 1,  name: "NOOLAM TEMPLE GOLD BROCADE",   price: 32000, type: "saree",     tags: ["silk", "zari"],    c: { base: "#C4A03A", accent: "#8f6b1d", border: "#E3C46B", pattern: "brocade" } },
-  { id: 2,  name: "NOOLAM ARAKKU ROSE SILK",      price: 28500, type: "saree",     tags: ["silk"],            c: { base: "#7E2237", accent: "#5a1424", border: "#D9A94E", pattern: "plain" } },
-  { id: 3,  name: "NOOLAM MIDNIGHT ZARI KANCHI",  price: 36000, type: "saree",     tags: ["silk", "zari"],    c: { base: "#20388E", accent: "#C99B3F", border: "#E3C46B", pattern: "plain" } },
-  { id: 4,  name: "NOOLAM IVORY SANDAL SILK",     price: 24000, type: "saree",     tags: ["silk"],            c: { base: "#EFE4CB", accent: "#c8b184", border: "#C99B3F", pattern: "plain" } },
-  { id: 5,  name: "NOOLAM RANI PINK PALLU",       price: 30200, type: "saree",     tags: ["silk"],            c: { base: "#C02561", accent: "#8f1746", border: "#E3C46B", pattern: "stripes" } },
-  { id: 6,  name: "NOOLAM THANDAVALAM CHECK",     price: 19900, type: "saree",     tags: ["silk", "checked"], c: { base: "#C8892B", accent: "#7e4a12", border: "#D9A94E", pattern: "check" } },
-  { id: 7,  name: "NOOLAM KAZHUNI KATTAM RED",    price: 18600, type: "saree",     tags: ["silk", "checked"], c: { base: "#B02734", accent: "#5f1017", border: "#D9A94E", pattern: "check" } },
-  { id: 8,  name: "NOOLAM THALAIVANA GREEN KATTAM", price: 21400, type: "saree",   tags: ["silk", "checked"], c: { base: "#2C7A4B", accent: "#143c24", border: "#D9A94E", pattern: "check" } },
-  { id: 9,  name: "NOOLAM KATTAM ROSE",           price: 16800, type: "saree",     tags: ["checked"],         c: { base: "#C4507C", accent: "#6e2140", border: "#E3C46B", pattern: "check" } },
-  { id: 10, name: "NOOLAM NEELAM BLUE KATTAM",    price: 17900, type: "saree",     tags: ["checked"],         c: { base: "#3E5FA8", accent: "#1d2f5c", border: "#D9A94E", pattern: "check" } },
-  { id: 11, name: "NOOLAM MANGAI MAROON SILK",    price: 26800, type: "saree",     tags: ["silk"],            c: { base: "#6E1220", accent: "#4a0b13", border: "#E3C46B", pattern: "plain" } },
-  { id: 12, name: "NOOLAM PATTU PAVADAI ROSE",    price: 14500, type: "halfsaree", tags: ["half"],            c: { base: "#C95C86", accent: "#E3C46B", border: "#D9A94E", pattern: "plain" } },
-  { id: 13, name: "NOOLAM MANJAL PAVADAI",        price: 13200, type: "halfsaree", tags: ["half"],            c: { base: "#D9A62B", accent: "#8C1D2C", border: "#E3C46B", pattern: "plain" } },
-  { id: 14, name: "NOOLAM VAAN BLUE HALF",        price: 15400, type: "halfsaree", tags: ["half"],            c: { base: "#2E4C9A", accent: "#9FB6DF", border: "#D9A94E", pattern: "plain" } },
-  { id: 15, name: "NOOLAM THAMARAI LOTUS HALF",   price: 16000, type: "halfsaree", tags: ["half"],            c: { base: "#D46A9E", accent: "#8C2B55", border: "#E3C46B", pattern: "stripes" } },
-  { id: 16, name: "NOOLAM SAFFRON RAW SILK BLOUSE", price: 3600, type: "blouse", sleeve: "full", tags: ["fullb"], c: { base: "#D98E2B", accent: "#a5641a", border: "#C99B3F", pattern: "plain" } },
-  { id: 17, name: "NOOLAM ROSE PINK SILK BLOUSE", price: 4200,  type: "blouse", sleeve: "full", tags: ["fullb"], c: { base: "#C2497B", accent: "#8e2f56", border: "#E3C46B", pattern: "plain" } },
-  { id: 18, name: "NOOLAM GREEN BROCADE BLOUSE",  price: 5400,  type: "blouse", sleeve: "full", tags: ["fullb", "zari"], c: { base: "#256B45", accent: "#C99B3F", border: "#C99B3F", pattern: "brocade" } },
-  { id: 19, name: "NOOLAM ARAKKU VELVET BLOUSE",  price: 6200,  type: "blouse", sleeve: "full", tags: ["fullb"], c: { base: "#5E1526", accent: "#3d0c19", border: "#D9A94E", pattern: "plain" } },
-  { id: 20, name: "NOOLAM DUSTY ROSE SILK BLOUSE", price: 4200, type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#C96A85", accent: "#93405a", border: "#E3C46B", pattern: "plain" } },
-  { id: 21, name: "NOOLAM TEAL TEMPLE BLOUSE",    price: 4800,  type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#1F6E6A", accent: "#0e4541", border: "#C99B3F", pattern: "plain" } },
-  { id: 22, name: "NOOLAM OCHRE COTTON BLOUSE",   price: 2900,  type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#C79A3B", accent: "#8a671d", border: "#b3873a", pattern: "plain" } },
-  { id: 23, name: "NOOLAM PINK STONE SILK BLOUSE", price: 3800, type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#D77FA6", accent: "#a34d72", border: "#E3C46B", pattern: "stripes" } },
-  { id: 24, name: "NOOLAM SEA GREEN SILK BLOUSE", price: 3400,  type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#6FA087", accent: "#3f6e56", border: "#C99B3F", pattern: "plain" } },
-  { id: 25, name: "NOOLAM MAROON ZARI BLOUSE",    price: 5900,  type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#7E1E31", accent: "#C99B3F", border: "#C99B3F", pattern: "stripes" } },
-  { id: 26, name: "NOOLAM LAVENDER SILK BLOUSE",  price: 4400,  type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#A08BC0", accent: "#6e5a8e", border: "#E3C46B", pattern: "plain" } },
-  { id: 27, name: "NOOLAM GREY BLUE COTTON BLOUSE", price: 3100, type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#7C93A8", accent: "#4f6478", border: "#b3a276", pattern: "plain" } },
+  { id: 1,  name: "STORESAREE TEMPLE GOLD BROCADE",   price: 32000, type: "saree",     tags: ["silk", "zari"],    c: { base: "#C4A03A", accent: "#8f6b1d", border: "#E3C46B", pattern: "brocade" } },
+  { id: 2,  name: "STORESAREE ARAKKU ROSE SILK",      price: 28500, type: "saree",     tags: ["silk"],            c: { base: "#7E2237", accent: "#5a1424", border: "#D9A94E", pattern: "plain" } },
+  { id: 3,  name: "STORESAREE MIDNIGHT ZARI KANCHI",  price: 36000, type: "saree",     tags: ["silk", "zari"],    c: { base: "#20388E", accent: "#C99B3F", border: "#E3C46B", pattern: "plain" } },
+  { id: 4,  name: "STORESAREE IVORY SANDAL SILK",     price: 24000, type: "saree",     tags: ["silk"],            c: { base: "#EFE4CB", accent: "#c8b184", border: "#C99B3F", pattern: "plain" } },
+  { id: 5,  name: "STORESAREE RANI PINK PALLU",       price: 30200, type: "saree",     tags: ["silk"],            c: { base: "#C02561", accent: "#8f1746", border: "#E3C46B", pattern: "stripes" } },
+  { id: 6,  name: "STORESAREE THANDAVALAM CHECK",     price: 19900, type: "saree",     tags: ["silk", "checked"], c: { base: "#C8892B", accent: "#7e4a12", border: "#D9A94E", pattern: "check" } },
+  { id: 7,  name: "STORESAREE KAZHUNI KATTAM RED",    price: 18600, type: "saree",     tags: ["silk", "checked"], c: { base: "#B02734", accent: "#5f1017", border: "#D9A94E", pattern: "check" } },
+  { id: 8,  name: "STORESAREE THALAIVANA GREEN KATTAM", price: 21400, type: "saree",   tags: ["silk", "checked"], c: { base: "#2C7A4B", accent: "#143c24", border: "#D9A94E", pattern: "check" } },
+  { id: 9,  name: "STORESAREE KATTAM ROSE",           price: 16800, type: "saree",     tags: ["checked"],         c: { base: "#C4507C", accent: "#6e2140", border: "#E3C46B", pattern: "check" } },
+  { id: 10, name: "STORESAREE NEELAM BLUE KATTAM",    price: 17900, type: "saree",     tags: ["checked"],         c: { base: "#3E5FA8", accent: "#1d2f5c", border: "#D9A94E", pattern: "check" } },
+  { id: 11, name: "STORESAREE MANGAI MAROON SILK",    price: 26800, type: "saree",     tags: ["silk"],            c: { base: "#6E1220", accent: "#4a0b13", border: "#E3C46B", pattern: "plain" } },
+  { id: 12, name: "STORESAREE PATTU PAVADAI ROSE",    price: 14500, type: "halfsaree", tags: ["half"],            c: { base: "#C95C86", accent: "#E3C46B", border: "#D9A94E", pattern: "plain" } },
+  { id: 13, name: "STORESAREE MANJAL PAVADAI",        price: 13200, type: "halfsaree", tags: ["half"],            c: { base: "#D9A62B", accent: "#8C1D2C", border: "#E3C46B", pattern: "plain" } },
+  { id: 14, name: "STORESAREE VAAN BLUE HALF",        price: 15400, type: "halfsaree", tags: ["half"],            c: { base: "#2E4C9A", accent: "#9FB6DF", border: "#D9A94E", pattern: "plain" } },
+  { id: 15, name: "STORESAREE THAMARAI LOTUS HALF",   price: 16000, type: "halfsaree", tags: ["half"],            c: { base: "#D46A9E", accent: "#8C2B55", border: "#E3C46B", pattern: "stripes" } },
+  { id: 16, name: "STORESAREE SAFFRON RAW SILK BLOUSE", price: 3600, type: "blouse", sleeve: "full", tags: ["fullb"], c: { base: "#D98E2B", accent: "#a5641a", border: "#C99B3F", pattern: "plain" } },
+  { id: 17, name: "STORESAREE ROSE PINK SILK BLOUSE", price: 4200,  type: "blouse", sleeve: "full", tags: ["fullb"], c: { base: "#C2497B", accent: "#8e2f56", border: "#E3C46B", pattern: "plain" } },
+  { id: 18, name: "STORESAREE GREEN BROCADE BLOUSE",  price: 5400,  type: "blouse", sleeve: "full", tags: ["fullb", "zari"], c: { base: "#256B45", accent: "#C99B3F", border: "#C99B3F", pattern: "brocade" } },
+  { id: 19, name: "STORESAREE ARAKKU VELVET BLOUSE",  price: 6200,  type: "blouse", sleeve: "full", tags: ["fullb"], c: { base: "#5E1526", accent: "#3d0c19", border: "#D9A94E", pattern: "plain" } },
+  { id: 20, name: "STORESAREE DUSTY ROSE SILK BLOUSE", price: 4200, type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#C96A85", accent: "#93405a", border: "#E3C46B", pattern: "plain" } },
+  { id: 21, name: "STORESAREE TEAL TEMPLE BLOUSE",    price: 4800,  type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#1F6E6A", accent: "#0e4541", border: "#C99B3F", pattern: "plain" } },
+  { id: 22, name: "STORESAREE OCHRE COTTON BLOUSE",   price: 2900,  type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#C79A3B", accent: "#8a671d", border: "#b3873a", pattern: "plain" } },
+  { id: 23, name: "STORESAREE PINK STONE SILK BLOUSE", price: 3800, type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#D77FA6", accent: "#a34d72", border: "#E3C46B", pattern: "stripes" } },
+  { id: 24, name: "STORESAREE SEA GREEN SILK BLOUSE", price: 3400,  type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#6FA087", accent: "#3f6e56", border: "#C99B3F", pattern: "plain" } },
+  { id: 25, name: "STORESAREE MAROON ZARI BLOUSE",    price: 5900,  type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#7E1E31", accent: "#C99B3F", border: "#C99B3F", pattern: "stripes" } },
+  { id: 26, name: "STORESAREE LAVENDER SILK BLOUSE",  price: 4400,  type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#A08BC0", accent: "#6e5a8e", border: "#E3C46B", pattern: "plain" } },
+  { id: 27, name: "STORESAREE GREY BLUE COTTON BLOUSE", price: 3100, type: "blouse", sleeve: "half", tags: ["halfb"], c: { base: "#7C93A8", accent: "#4f6478", border: "#b3a276", pattern: "plain" } },
 ];
 
 const CATS = [
@@ -297,7 +297,7 @@ function paintTL() {
   $("#tlItems").innerHTML = items.map((it, i) =>
     `<div class="tl-item">
       <span class="tl-thumb"><img src="${it.thumb}" alt=""><i>${i + 1}</i></span>
-      <span class="tl-item-info"><em>NOOLAM · ${it.cat}</em><b>${it.n}</b><span>₹${it.p.toLocaleString("en-IN")}</span></span>
+      <span class="tl-item-info"><em>STORESAREE · ${it.cat}</em><b>${it.n}</b><span>₹${it.p.toLocaleString("en-IN")}</span></span>
       <button class="tl-mini wish" aria-label="Wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.9c0 5.4-7.5 10-7.5 10Z"/></svg></button>
       <button class="tl-mini plus" aria-label="Add"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
     </div>`).join("");
